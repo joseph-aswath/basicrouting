@@ -1,5 +1,9 @@
 import * as React from 'react';
 import { Routes,Route,Outlet,Link} from 'react-router-dom';
+import Home from '../src/home/home.jsx';
+import About from '../src/about/about.jsx';
+import Dashboard from '../src/dashboard/dashboard.jsx';
+import NoMatch from '../src/nothing_here/nomatch.jsx';
 /******************************************************************* */
 export default function App(){
     return(
@@ -24,7 +28,7 @@ export default function App(){
     );
     } 
 
-/************************************************************************** */
+/******************************************************************** */
 function Layout(){
          return(
                     <div>
@@ -49,40 +53,5 @@ function Layout(){
                     </div>
             );
 }
-/*****************************************************************************/
 
-function Home(){
-    return(
-        <div>
-            <h1>HOME</h1>
-        </div>
-    );
-}
-/************************************************************************** */
-function About(){
-    return(
-        <div>
-            <h1>ABOUT</h1>
-        </div>
-    );
-}
-/************************************************************************** */
-function Dashboard(){
-    return(
-        <div>
-            <h1>DASHBOARD</h1>
-        </div>
-    );
-}
-/******************************** */
-function NoMatch(){
-    return(
-        <div>
-            <h1>nothing to see here </h1>
-            <p>
-                <Link to="/"> go back to HOME page</Link>
-            </p>
-        </div>
-    );
-}
 /**************************** */
