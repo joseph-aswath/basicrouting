@@ -1,0 +1,13 @@
+body{
+    margin:0px;
+    background-image:linear-gradient( to bottom left , black,green);
+    height: 100vh;
+}
+
+.mainHeading,h1{
+    padding:5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:50%;
+    margin-left:25%;
+}
+
